@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — iFoldy</title>
+  <meta name="description" content="How iFoldy handles data: no account, no tracking, everything stays on your device.">
+  <link rel="canonical" href="https://v4ulthunt3r.github.io/iFoldy/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://v4ulthunt3r.github.io/iFoldy/privacy.html">
+  <link rel="alternate" hreflang="de" href="https://v4ulthunt3r.github.io/iFoldy/privacy-de.html">
+  <link rel="alternate" hreflang="x-default" href="https://v4ulthunt3r.github.io/iFoldy/privacy.html">
+  <meta name="theme-color" content="#F5EFE4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1A120D" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="assets/favicon-64.png" sizes="64x64" type="image/png">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'dark' || (!saved && matchMedia('(prefers-color-scheme: dark)').matches))
+          document.documentElement.classList.add('dark');
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/landing.css?v=3">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div id="nav-top" aria-hidden="true"></div>
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/icon-256.png" alt="" width="30" height="30">
+      <span>iFoldy</span>
+    </a>
+    <div class="nav-right">
+      <a class="nav-link hide-sm" href="index.html#cards">Cards</a>
+      <a class="nav-link hide-sm" href="index.html#sleeve">Note &amp; map</a>
+      <a class="nav-link hide-sm" href="index.html#privacy">Privacy</a>
+      <a class="nav-link hide-sm" href="support.html">Support</a>
+      <button id="theme-toggle" class="icon-btn" type="button" aria-label="Switch between light and dark" aria-pressed="false">
+        <svg class="ico" id="theme-icon" aria-hidden="true"><use href="assets/icons.svg#i-moon"/></svg>
+      </button>
+      <a class="nav-link" href="privacy-de.html" hreflang="de" lang="de">DE</a>
+    </div>
+  </div>
+</nav>
+
+<main class="doc" id="main">
+  <h1>Privacy Policy</h1>
+  <p class="doc-meta">iFoldy for iPhone Duo, iPhone and iPad · Last updated: 25 October 2026</p>
+
+  <div class="summary">
+    <h2><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-shield"/></svg> The short version</h2>
+    <p>iFoldy collects no personal data. There is no account, no analytics, no advertising and no third-party SDK, and I run no server the app talks to. Your cards, notes and settings are stored only on your device.</p>
+    <p>Some features use Apple’s own services on your device — Contacts, Calendar, Reminders and Apple Maps. They are only used when you open that feature and grant access.</p>
+  </div>
+
+  <section>
+    <h2><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-person"/></svg> 1. Controller</h2>
+    <dl>
+      <dt>Name</dt><dd>Peter Hildel</dd>
+      <dt>Address</dt><dd>Gustav-Adolf-Str. 19, 90513 Zirndorf, Germany</dd>
+      <dt>Email</dt><dd><a href="mailto:info@hildel.com">info@hildel.com</a></dd>
+    </dl>
+    <p>Controller within the meaning of Art. 4(7) GDPR for the processing described below. There is no statutory obligation to appoint a data protection officer.</p>
+  </section>
+  <section>
+    <h2><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-scan"/></svg> 2. Scanning cards (camera and photos)</h2>
+    <p>To add a card you can use the camera or choose images with the system photo picker. iOS asks for camera access the first time you scan. The photo picker only gives iFoldy the images you select; it does not grant access to your library.</p>
+    <p>Edge detection, perspective correction and text recognition run entirely on your device with Apple’s frameworks (AVFoundation, Vision, Core Image). No image is uploaded or analysed by an external service.</p>
+    <p>Before saving, you cover card numbers and security codes with opaque masks and confirm both sides. Only these masked images, the name you give the card and its position in the wallet are stored. The images use iOS’s complete file protection and are excluded from iCloud and computer backups.</p>
+  </section>
+  <section>
+    <h2><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-note"/></svg> 3. Notes and settings stored on your device</h2>
+    <p>The folded note, your card order and pocket assignments, the chosen example collection, the app language and the sound preference are saved in iFoldy’s own storage on your device. Material, layout and other wallet appearance settings are kept only for the current session.</p>
+    <p>None of this is transmitted. Deleting the app removes all of it.</p>
+  </section>
+  <section>
+    <h2><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-check-list"/></svg> 4. Reminders, Calendar and Contacts</h2>
+    <ul>
+      <li><strong>Reminders</strong> — only if you choose “Connect to Reminders” on the note. iFoldy shows the list you pick, adds tasks and marks them complete in Apple’s Reminders store. Synchronisation happens through the accounts configured on your device (for example iCloud), not through iFoldy.</li>
+      <li><strong>Calendar</strong> — only when you open the pocket calendar. Events are read to display your week; iFoldy does not create, change or delete events and does not store them.</li>
+      <li><strong>Contacts</strong> — only when you open the business cards. Contacts are read on the device to display them; iFoldy does not save copies of contact data.</li>
+    </ul>
+    <p>You can revoke each permission at any time in Settings → Privacy &amp; Security.</p>
+  </section>
+  <section>
+    <h2><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-map"/></svg> 5. Paper map and location</h2>
+    <p>The paper map uses Apple Maps (MapKit). When you search for a place or request a route, the search text, the selected start and destination and, if you choose “Current location”, your position are sent to Apple to return results. Apple processes this data as an independent controller under its <a href="https://www.apple.com/legal/privacy/">privacy policy</a>; I receive none of it.</p>
+    <p>Location access is requested only when you use your current position on the map, and only while the app is in use.</p>
+  </section>
+  <section>
+    <h2><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-eye-off"/></svg> 6. No tracking</h2>
+    <p>iFoldy contains no analytics or crash-reporting SDK, no advertising and no tracking of any kind. Nothing is sold or shared for advertising.</p>
+    <p>If you have enabled “Share with App Developers” in iOS, Apple may provide me with anonymised crash reports and usage statistics. You control this in Settings → Privacy &amp; Security → Analytics &amp; Improvements.</p>
+  </section>
+  <section>
+    <h2><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-apple"/></svg> 7. Download through the App Store</h2>
+    <p>When you obtain iFoldy through the App Store, Apple processes the data needed for the download and your Apple Account as an independent controller. I receive only aggregated sales and download figures.</p>
+  </section>
+  <section>
+    <h2><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-mail"/></svg> 8. Contacting me</h2>
+    <p>If you email me, I process your email address, your message and anything you include (for example your device model) to answer it. Legal basis: Art. 6(1)(b) GDPR where your request relates to using the app, otherwise Art. 6(1)(f) GDPR. Emails are deleted once the matter is resolved, unless statutory retention periods apply.</p>
+  </section>
+  <section>
+    <h2><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-globe"/></svg> 9. This website</h2>
+    <p>This website is static and hosted on GitHub Pages (GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). When you visit it, GitHub processes technical connection data — IP address, time of request, requested file, referrer and user agent — in server logs, which is necessary to deliver the page. Legal basis: Art. 6(1)(f) GDPR. GitHub may process data in the USA; transfers are based on the EU standard contractual clauses and, where applicable, the EU–US Data Privacy Framework.</p>
+    <p>The site sets no cookies, uses no analytics and loads no external fonts or scripts. Your light/dark preference is stored locally in your browser and never leaves your device.</p>
+  </section>
+  <section>
+    <h2><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-shield"/></svg> 10. Your rights</h2>
+    <p>You have the right to information (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20) and to object (Art. 21 GDPR). One email to <a href="mailto:info@hildel.com">info@hildel.com</a> is enough. Because iFoldy stores no personal data on my side, a request for information will usually be answered with exactly that.</p>
+    <p>You also have the right to lodge a complaint with a supervisory authority — for me that is the Bavarian Data Protection Authority (Bayerisches Landesamt für Datenschutzaufsicht), Promenade 18, 91522 Ansbach, Germany.</p>
+  </section>
+  <section>
+    <h2><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-info"/></svg> 11. Changes</h2>
+    <p>If iFoldy gains features that change how data is handled, this page will be updated before those features ship. The date at the top shows the current version.</p>
+  </section>
+
+  <div class="back">
+    <a href="index.html" class="btn btn-primary"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-arrow-right"/></svg> Back to the app page</a>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="impressum.html">Legal Notice</a>
+      <a href="privacy-de.html" hreflang="de" lang="de">Deutsch</a>
+    </div>
+    <p class="footer-note tiny">© <span id="year">2026</span> Peter Hildel · iFoldy is not affiliated with Apple Inc. Apple, iPhone, iPhone Duo, iPad, Apple Maps and App Store are trademarks of Apple&nbsp;Inc.</p>
+  </div>
+</footer>
+
+<script src="assets/site.js?v=1" defer></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3003" height="2157" viewBox="0 0 3003 2157"><title>ShotForge original phone frame — duo-inner-night</title><g transform="translate(3003 0) rotate(90)"><defs>
+  <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0">
+    <stop stop-color="#030405"/><stop offset=".004" stop-color="#9aa3b3"/>
+    <stop offset=".01" stop-color="#2c323c"/><stop offset=".018" stop-color="white"/>
+    <stop offset=".03" stop-color="#171b22"/><stop offset=".2" stop-color="#2c323c"/>
+    <stop offset=".45" stop-color="#9aa3b3"/><stop offset=".7" stop-color="#2c323c"/>
+    <stop offset=".965" stop-color="#171b22"/><stop offset=".982" stop-color="white"/>
+    <stop offset=".99" stop-color="#2c323c"/><stop offset=".996" stop-color="#9aa3b3"/>
+    <stop offset="1" stop-color="#030405"/>
+  </linearGradient>
+  <linearGradient id="edge" x1="0" y1="0" x2=".28" y2="1">
+    <stop stop-color="white" stop-opacity=".95"/><stop offset=".12" stop-color="white" stop-opacity=".1"/>
+    <stop offset=".45" stop-color="black" stop-opacity=".32"/><stop offset=".68" stop-color="white" stop-opacity=".35"/>
+    <stop offset="1" stop-color="black" stop-opacity=".4"/>
+  </linearGradient>
+  <linearGradient id="button" x1="0" y1="0" x2="1" y2="0">
+    <stop stop-color="#030405"/><stop offset=".45" stop-color="#2c323c"/><stop offset=".7" stop-color="#171b22"/><stop offset="1" stop-color="#0b0d11"/>
+  </linearGradient>
+  <radialGradient id="lens"><stop stop-color="#111c2c"/><stop offset=".48" stop-color="#070c16"/><stop offset=".75" stop-color="#152030"/><stop offset="1" stop-color="#030406"/></radialGradient>
+  <mask id="opening" maskUnits="userSpaceOnUse" x="0" y="0" width="2157" height="3003">
+    <rect width="2157" height="3003" fill="white"/>
+    <rect x="75" y="75" width="2007" height="2853" rx="137" fill="black"/>
+  </mask>
+</defs>
+<g fill="url(#button)" stroke="#030405" stroke-width="1.5">
+  <rect x="3" y="510" width="17" height="150" rx="6"/>
+  <rect x="3" y="736" width="17" height="150" rx="6"/>
+  <rect x="582" y="3" width="216" height="17" rx="6"/>
+  <rect x="1424" y="3" width="172" height="17" rx="6"/>
+</g>
+<g mask="url(#opening)">
+  <rect x="14" y="14" width="2129" height="2975" rx="195" fill="url(#metal)" stroke="#030405" stroke-width="3"/>
+  <rect x="16" y="16" width="2125" height="2971" rx="193" fill="url(#edge)"/>
+  <rect x="19" y="19" width="2119" height="2965" rx="190" fill="none" stroke="white" stroke-opacity=".75" stroke-width="2.5"/>
+  <rect x="23" y="23" width="2111" height="2957" rx="186" fill="none" stroke="#9aa3b3" stroke-opacity=".95" stroke-width="3"/>
+  <g stroke="#030405" stroke-width="6" opacity=".65"><path d="M15 300h23 M2119 300h23 M15 2703h23 M2119 2703h23 M15 1492.5h23 M2119 1492.5h23 M15 1510.5h23 M2119 1510.5h23"/></g>
+  <rect x="36" y="36" width="2085" height="2931" rx="174" fill="#08090b" stroke="#0b0d11" stroke-width="3"/>
+  <rect x="41" y="41" width="2075" height="2921" rx="169" fill="#050506" stroke="#777e86" stroke-opacity=".36" stroke-width="2"/>
+  <rect x="75" y="75" width="2007" height="2853" rx="137" fill="none" stroke="#25272c" stroke-width="3"/>
+</g></g></svg>

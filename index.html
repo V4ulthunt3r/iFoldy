@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iFoldy — A leather wallet for iPhone Duo</title>
+  <meta name="description" content="iFoldy turns iPhone Duo into a real wallet: fold the phone open and the wallet opens with it. Stitched leather, suede, canvas or carbon, pockets for your scanned cards, a folded note, a paper map and a pocket calendar. Everything stays on your device.">
+  <link rel="canonical" href="https://v4ulthunt3r.github.io/iFoldy/">
+  <link rel="alternate" hreflang="en" href="https://v4ulthunt3r.github.io/iFoldy/index.html">
+  <link rel="alternate" hreflang="de" href="https://v4ulthunt3r.github.io/iFoldy/index-de.html">
+  <link rel="alternate" hreflang="x-default" href="https://v4ulthunt3r.github.io/iFoldy/index.html">
+  <meta name="theme-color" content="#F5EFE4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1A120D" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="iFoldy — A leather wallet for iPhone Duo">
+  <meta property="og:description" content="Fold your iPhone Duo open and the wallet opens with it: pockets for your cards, a folded note, a paper map. Everything stays on your device.">
+  <meta property="og:image" content="https://v4ulthunt3r.github.io/iFoldy/assets/img/duo-open.jpg">
+  <meta property="og:locale" content="en">
+  <meta property="og:locale:alternate" content="de">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon-64.png" sizes="64x64" type="image/png">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'dark' || (!saved && matchMedia('(prefers-color-scheme: dark)').matches))
+          document.documentElement.classList.add('dark');
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/landing.css?v=3">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div id="nav-top" aria-hidden="true"></div>
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/icon-256.png" alt="" width="30" height="30">
+      <span>iFoldy</span>
+    </a>
+    <div class="nav-right">
+      <a class="nav-link hide-sm" href="#fold">Fold</a>
+      <a class="nav-link hide-sm" href="#cards">Cards</a>
+      <a class="nav-link hide-sm" href="#sleeve">Note &amp; map</a>
+      <a class="nav-link hide-sm" href="#privacy">Privacy</a>
+      <a class="nav-link hide-sm" href="support.html">Support</a>
+      <button id="theme-toggle" class="icon-btn" type="button" aria-label="Switch between light and dark" aria-pressed="false">
+        <svg class="ico" id="theme-icon" aria-hidden="true"><use href="assets/icons.svg#i-moon"/></svg>
+      </button>
+      <a class="nav-link" href="index-de.html" hreflang="de" lang="de">DE</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- ============================ Hero ============================ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <img class="hero-icon" src="assets/icon-512.png" alt="iFoldy app icon" width="88" height="88">
+        <p class="eyebrow">Made for iPhone Duo</p>
+        <h1>Fold it open.<br><span class="accent">It’s a wallet.</span></h1>
+        <p class="lede">
+          iFoldy turns iPhone Duo into stitched leather. Closed, the cover display is the
+          front of the wallet. Unfold the phone and the wallet opens with it — two leaves,
+          your cards in their pockets, a note and a paper map tucked in at the spine.
+        </p>
+        <div class="btn-row">
+          <span class="store-badge" aria-label="Coming soon to the App Store">
+            <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-apple"/></svg>
+            <span><small>Coming soon to the</small><b>App Store</b></span>
+          </span>
+          <a class="btn btn-secondary" href="#fold">
+            See it fold
+            <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-arrow-down"/></svg>
+          </a>
+        </div>
+        <div class="pill-row">
+          <span class="pill"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-tablet"/></svg> Follows the real hinge</span>
+          <span class="pill"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-cloud-off"/></svg> Stays on your device</span>
+          <span class="pill"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-eye-off"/></svg> No tracking</span>
+        </div>
+      </div>
+
+      <div class="duo-hero">
+        <div class="duo">
+          <div class="screen">
+            <video src="assets/img/duo-cards.mp4" poster="assets/img/duo-cards-poster.jpg"
+                   autoplay muted loop playsinline preload="metadata" width="1424" height="1002"
+                   aria-label="Recording on iPhone Duo: cards are pulled from their leather pockets, turned and slid back."></video>
+          </div>
+        </div>
+        <div class="duo-outer">
+          <div class="screen"><img src="assets/img/duo-outer-cover.jpg" alt="The folded iPhone Duo: the cover display shows the stitched leather front with the iFoldy mark." width="1031" height="1500"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ Fold ============================ -->
+  <section class="block tinted" id="fold">
+    <div class="wrap split">
+      <div class="reveal">
+        <div class="section-head">
+          <p class="eyebrow">The hinge</p>
+          <h2>The phone folds. So does the wallet.</h2>
+          <p>
+            No extra button, no virtual flip. iFoldy reads the Duo’s own hinge: open the
+            phone and you look straight into the wallet; close it and the leather cover is
+            waiting on the outside.
+          </p>
+        </div>
+        <ul class="feature-list">
+          <li>
+            <span class="badge"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-wallet"/></svg></span>
+            <h3>Two leaves, one spine</h3>
+            <p>The inner display becomes a book-shaped wallet with pockets on both leaves and slip sleeves along the fold.</p>
+          </li>
+          <li>
+            <span class="badge"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-phone"/></svg></span>
+            <h3>A cover on the outside</h3>
+            <p>Folded, the cover display shows the front of the wallet — tap or swipe it to open a single-screen card holder.</p>
+          </li>
+          <li>
+            <span class="badge"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-stack"/></svg></span>
+            <h3>Nothing gets lost in the fold</h3>
+            <p>Your cards, their pockets and the selected card survive every change of display. A card in your hand slides home before the phone closes.</p>
+          </li>
+        </ul>
+      </div>
+      <figure class="fold-stage reveal" style="margin:0">
+        <video src="assets/img/duo-fold.mp4" poster="assets/img/duo-fold-poster.jpg"
+               autoplay muted loop playsinline preload="metadata" width="1200" height="900"
+               aria-label="Simulator recording: the iPhone Duo is folded shut, showing the leather cover, and unfolded again into the open wallet."></video>
+        <figcaption>iPhone Duo in the simulator, folded and unfolded in real time.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============================ Cards ============================ -->
+  <section class="block" id="cards">
+    <div class="wrap split flip">
+      <div class="reveal">
+        <div class="section-head">
+          <p class="eyebrow">Cards</p>
+          <h2>Pockets that behave like pockets.</h2>
+          <p>
+            Cards sit in stitched slots, stack behind each other and press faint corners
+            through the leather. Hold a stack to fan it, pull the one you want, turn it
+            in your hand — then slide it back where it lives.
+          </p>
+        </div>
+        <ul class="feature-list">
+          <li>
+            <span class="badge"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-scan"/></svg></span>
+            <h3>Scan front and back</h3>
+            <p>Hold a card steady and iFoldy captures it automatically, straightens the edges and reads the text — all on the device.</p>
+          </li>
+          <li>
+            <span class="badge"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-shield"/></svg></span>
+            <h3>Masked before it’s saved</h3>
+            <p>You cover card numbers and security codes with opaque masks and confirm both sides. Only the masked images are stored.</p>
+          </li>
+          <li>
+            <span class="badge"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-card"/></svg></span>
+            <h3>Three to eight pockets</h3>
+            <p>Classic, Cascade, Offset or four, six and eight pockets across both leaves. Drag cards between slots to arrange the wallet your way.</p>
+          </li>
+          <li>
+            <span class="badge"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-hand"/></svg></span>
+            <h3>Flip, tilt, put away</h3>
+            <p>Drag sideways to rotate a card, flick to flip it, pull down on the lower edge to return it. Every motion can be caught mid-way.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="duo-pair reveal">
+        <div class="duo"><div class="screen"><img src="assets/img/duo-pockets.jpg" alt="Eight fictional demo cards spread over both leaves, with the note sleeve at the spine." width="1800" height="1266" loading="lazy"></div></div>
+        <div class="duo"><div class="screen"><img src="assets/img/duo-card-out.jpg" alt="A library card pulled from its pocket and held in front of the wallet." width="1424" height="1002" loading="lazy"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ Sleeve ============================ -->
+  <section class="block tinted" id="sleeve">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <p class="eyebrow">The spine sleeves</p>
+        <h2>A note, a map, a little calendar.</h2>
+        <p>
+          Along the fold, slip pockets hold folded paper. Pull it out and it unfolds along
+          its creases — into a note you can write on, a map that finds your way, or the week ahead.
+          On the Duo, the map spreads across one leaf and the route planner sits on the other.
+        </p>
+      </div>
+      <div class="duo reveal" style="max-width:980px;margin-inline:auto">
+        <div class="screen">
+          <video src="assets/img/notes-and-map.mp4" poster="assets/img/notes-and-map-poster.jpg"
+                 autoplay muted loop playsinline preload="metadata" width="1280" height="900"
+                 aria-label="Recording on iPhone Duo: a folded note is pulled from the sleeve and unfolds, then a paper map opens."></video>
+        </div>
+      </div>
+      <div class="gallery">
+        <figure class="reveal">
+          <div class="duo"><div class="screen"><img src="assets/img/duo-note.jpg" alt="A lined paper note unfolded over the wallet." width="1800" height="1266" loading="lazy"></div></div>
+          <figcaption><b>Folded note</b>Lined paper with handwriting, visible creases and a turned corner. Saves as you type.</figcaption>
+        </figure>
+        <figure class="reveal">
+          <div class="duo"><div class="screen"><img src="assets/img/duo-map.jpg" alt="A folded paper map of Berlin with a route planner on the other leaf." width="1800" height="1266" loading="lazy"></div></div>
+          <figcaption><b>Paper map</b>Four panels unfold into Apple Maps with search, walking and driving routes, and a hand-off to navigation.</figcaption>
+        </figure>
+        <figure class="reveal">
+          <div class="duo"><div class="screen"><img src="assets/img/duo-reminders.jpg" alt="The note showing a shopping list from Apple Reminders." width="1800" height="1266" loading="lazy"></div></div>
+          <figcaption><b>Reminders on paper</b>Connect a Reminders list to the note: add tasks and tick them off. Changes go straight to Apple Reminders.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ Materials ============================ -->
+  <section class="block" id="materials">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <p class="eyebrow">Materials</p>
+        <h2>Eight finishes. All stitched.</h2>
+        <p>
+          Fine-grain leather, brushed suede, plain-weave canvas or woven carbon — each with
+          its own seams, edges and give. Let it age from new to worn to vintage.
+        </p>
+      </div>
+      <div class="materials reveal">
+        <div class="material m-cognac"><span>Leather</span><b>Cognac</b></div>
+        <div class="material m-espresso"><span>Leather</span><b>Espresso</b></div>
+        <div class="material m-bordeaux"><span>Leather</span><b>Bordeaux</b></div>
+        <div class="material m-forest"><span>Leather</span><b>Forest</b></div>
+        <div class="material m-sand"><span>Suede</span><b>Sand</b></div>
+        <div class="material m-olive"><span>Canvas</span><b>Olive</b></div>
+        <div class="material m-navy"><span>Canvas</span><b>Navy</b></div>
+        <div class="material m-carbon"><span>Carbon</span><b>Graphite</b></div>
+      </div>
+      <div class="duo-covers reveal">
+        <div class="duo"><div class="screen"><img src="assets/img/duo-closed-carbon.jpg" alt="The unfolded Duo showing a closed wallet in graphite carbon." width="1426" height="1002" loading="lazy"></div></div>
+        <div class="duo-outer"><div class="screen"><img src="assets/img/duo-outer-cover.jpg" alt="The folded Duo with a cognac leather cover." width="1031" height="1500" loading="lazy"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ iPhone & iPad ============================ -->
+  <section class="block tinted" id="iphone">
+    <div class="wrap split">
+      <div class="reveal">
+        <div class="section-head">
+          <p class="eyebrow">Also on iPhone &amp; iPad</p>
+          <h2>One continuous card holder.</h2>
+          <p>
+            On a regular iPhone the whole screen is a single card holder under a sliding
+            cover — in portrait or landscape. On iPad the wallet spreads over two leaves,
+            side by side like a book or stacked like a clamshell.
+          </p>
+        </div>
+        <ul class="feature-list">
+          <li>
+            <span class="badge"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-hand"/></svg></span>
+            <h3>Try it here</h3>
+            <p>Swipe the cover up on the phone beside this text, and switch the material below it.</p>
+          </li>
+          <li>
+            <span class="badge"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-person"/></svg></span>
+            <h3>Same wallet everywhere</h3>
+            <p>Pockets, note, map, calendar and business cards work on every device. Cards stay on the device you scanned them on.</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="phone-demo reveal" data-wallet>
+        <div class="phone">
+          <div class="screen">
+            <img src="assets/img/open-phone.jpg" alt="The open wallet on iPhone: cards sit in stitched leather pockets on one continuous surface." width="506" height="1100" loading="lazy">
+            <button class="cover" type="button" aria-expanded="false"
+                    aria-label="Open the wallet" data-label-open="Open the wallet" data-label-close="Wallet is open">
+              <img class="on" data-material="cognac" src="assets/img/cover-cognac.jpg" alt="" width="506" height="1100" loading="lazy">
+              <img data-material="carbon" src="assets/img/cover-carbon.jpg" alt="" width="506" height="1100" loading="lazy">
+              <img data-material="sand" src="assets/img/cover-sand.jpg" alt="" width="506" height="1100" loading="lazy">
+            </button>
+            <span class="island" aria-hidden="true"></span>
+          </div>
+        </div>
+        <span class="demo-hint">
+          <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-hand"/></svg>
+          <span data-hint data-open="Swipe the cover up" data-close="Tap the pockets to close">Swipe the cover up</span>
+        </span>
+        <div class="swatches" role="group" aria-label="Cover material">
+          <button class="swatch m-cognac" type="button" data-material="cognac" aria-pressed="true" aria-label="Cognac leather"></button>
+          <button class="swatch m-carbon" type="button" data-material="carbon" aria-pressed="false" aria-label="Graphite carbon"></button>
+          <button class="swatch m-sand" type="button" data-material="sand" aria-pressed="false" aria-label="Sand suede"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ Details ============================ -->
+  <section class="block" id="details">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Details</p>
+        <h2>Small things you can feel.</h2>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <span class="badge"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-fold"/></svg></span>
+          <h3>Book or clamshell</h3>
+          <p>Let iFoldy pick the fold from the display, or choose side-by-side leaves or a top-and-bottom spread yourself.</p>
+        </article>
+        <article class="card reveal">
+          <span class="badge"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-sound"/></svg></span>
+          <h3>Quiet Foley</h3>
+          <p>Soft opening and closing sounds for leather, suede, canvas and carbon. They respect Silent mode.</p>
+        </article>
+        <article class="card reveal">
+          <span class="badge"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-wave"/></svg></span>
+          <h3>Haptic contact</h3>
+          <p>A light tap when the cover lands, a card seats or a pocket takes a card. Release speed carries into every motion.</p>
+        </article>
+        <article class="card reveal">
+          <span class="badge"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-band"/></svg></span>
+          <h3>Retaining band</h3>
+          <p>An optional elastic, nylon or leather band in six colours peels over the edge before the cover opens.</p>
+        </article>
+        <article class="card reveal">
+          <span class="badge"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-person"/></svg></span>
+          <h3>Business cards</h3>
+          <p>A small stack in the sleeve shows your contacts on six paper designs — with call, message and mail at hand.</p>
+        </article>
+        <article class="card reveal">
+          <span class="badge"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-access"/></svg></span>
+          <h3>For everyone</h3>
+          <p>VoiceOver labels on every fitting, Reduce Motion support, and an interface in English and German.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ Privacy ============================ -->
+  <section class="block" id="privacy" style="padding-top:0">
+    <div class="wrap">
+      <div class="leather-panel reveal">
+        <div style="position:relative;max-width:42rem;display:grid;gap:1rem">
+          <p class="eyebrow">Privacy</p>
+          <h2>What’s in your wallet stays in your wallet.</h2>
+          <p>iFoldy has no account, no cloud of its own, no analytics and no ads. Your cards and notes never leave the device.</p>
+        </div>
+        <div class="grid">
+          <div>
+            <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-lock"/></svg>
+            <h3>Protected on the device</h3>
+            <p>Card images use iOS’s strongest file protection and are excluded from backups.</p>
+          </div>
+          <div>
+            <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-scan"/></svg>
+            <h3>Recognition without a server</h3>
+            <p>Camera, edge detection and text recognition run with Apple’s on-device frameworks. No external AI.</p>
+          </div>
+          <div>
+            <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-check-list"/></svg>
+            <h3>Access only when you ask</h3>
+            <p>Camera, Contacts, Calendar, Reminders and Location are requested the moment you use that feature — not before.</p>
+          </div>
+          <div>
+            <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-eye-off"/></svg>
+            <h3>No tracking at all</h3>
+            <p>No third-party SDKs. Details in the <a href="privacy.html">privacy policy</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ CTA ============================ -->
+  <section class="block tinted" id="get">
+    <div class="wrap cta reveal">
+      <img class="hero-icon" src="assets/icon-512.png" alt="" width="112" height="112">
+      <h2>Fold it open soon.</h2>
+      <p class="lede">iFoldy is in the final stretch. It will be available on the App Store — made for iPhone Duo, at home on every iPhone and iPad.</p>
+      <span class="store-badge" aria-label="Coming soon to the App Store">
+        <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-apple"/></svg>
+        <span><small>Coming soon to the</small><b>App Store</b></span>
+      </span>
+      <div class="req">
+        <span class="pill"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-tablet"/></svg> Optimised for iPhone Duo</span>
+        <span class="pill"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-phone"/></svg> iPhone &amp; iPad · iOS 26 or later</span>
+        <span class="pill"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-globe"/></svg> English · Deutsch</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="impressum.html">Legal Notice</a>
+      <a href="index-de.html" hreflang="de" lang="de">Deutsch</a>
+    </div>
+    <p class="footer-note tiny">
+      © <span id="year">2026</span> Peter Hildel · iFoldy is not affiliated with Apple Inc. Apple, iPhone, iPhone Duo, iPad,
+      Apple Maps and App Store are trademarks of Apple&nbsp;Inc. All cards shown are fictional specimens.
+    </p>
+  </div>
+</footer>
+
+<script src="assets/site.js?v=1" defer></script>
+</body>
+</html>
