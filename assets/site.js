@@ -42,6 +42,37 @@
   const year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 
+  /* ---- TestFlight sign-up: posts the address to FormSubmit, which mails it on.
+     Without JavaScript the form posts normally and FormSubmit redirects back. ---- */
+  const beta = document.querySelector('[data-beta]');
+  if (beta) {
+    const status = beta.querySelector('.beta-status');
+    const button = beta.querySelector('button[type="submit"]');
+    const say = (text, state) => { status.textContent = text; beta.dataset.state = state; };
+    if (new URLSearchParams(location.search).get('beta') === 'sent') say(beta.dataset.done, 'done');
+    beta.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (beta.elements._honey.value) return;
+      button.disabled = true;
+      say(beta.dataset.sending, 'sending');
+      try {
+        const res = await fetch(beta.action.replace('formsubmit.co/', 'formsubmit.co/ajax/'), {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: new FormData(beta),
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok || String(data.success) !== 'true') throw new Error(data.message || res.status);
+        beta.reset();
+        say(beta.dataset.done, 'done');
+      } catch (err) {
+        say(beta.dataset.failed, 'failed');
+      } finally {
+        button.disabled = false;
+      }
+    });
+  }
+
   /* ---- Hero wallet ---- */
   const demo = document.querySelector('[data-wallet]');
   if (!demo) return;

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>iFoldy — A leather wallet for iPhone Duo</title>
-  <meta name="description" content="iFoldy turns iPhone Duo into a real wallet: fold the phone open and the wallet opens with it. Stitched leather, suede, canvas or carbon, pockets for your scanned cards, a folded note, a paper map and a pocket calendar. Everything stays on your device.">
+  <meta name="description" content="iFoldy turns iPhone Duo into a real wallet: fold the phone open and the wallet opens with it. Pockets for your scanned cards, a folded note, a paper map, a pocket calendar and stamp cards. Free to start, iFoldy Pro as a one-time purchase. Everything stays on your device.">
   <link rel="canonical" href="https://v4ulthunt3r.github.io/iFoldy/">
   <link rel="alternate" hreflang="en" href="https://v4ulthunt3r.github.io/iFoldy/index.html">
   <link rel="alternate" hreflang="de" href="https://v4ulthunt3r.github.io/iFoldy/index-de.html">
@@ -30,7 +30,7 @@
       } catch (e) {}
     })();
   </script>
-  <link rel="stylesheet" href="assets/landing.css?v=5">
+  <link rel="stylesheet" href="assets/landing.css?v=6">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -45,9 +45,10 @@
     <div class="nav-right">
       <a class="nav-link hide-sm" href="#fold">Fold</a>
       <a class="nav-link hide-sm" href="#cards">Cards</a>
-      <a class="nav-link hide-sm" href="#sleeve">Note &amp; map</a>
-      <a class="nav-link hide-sm" href="#privacy">Privacy</a>
+      <a class="nav-link hide-sm" href="#sleeve">Pockets</a>
+      <a class="nav-link hide-sm" href="#pro">Pro</a>
       <a class="nav-link hide-sm" href="support.html">Support</a>
+      <a class="nav-link nav-beta" href="#beta">Beta</a>
       <button id="theme-toggle" class="icon-btn" type="button" aria-label="Switch between light and dark" aria-pressed="false">
         <svg class="ico" id="theme-icon" aria-hidden="true"><use href="assets/icons.svg#i-moon"/></svg>
       </button>
@@ -75,8 +76,8 @@
             <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-apple"/></svg>
             <span><small>Coming soon to the</small><b>App Store</b></span>
           </span>
-          <a class="btn btn-secondary" href="#fold">
-            See it fold
+          <a class="btn btn-secondary" href="#beta">
+            Join the TestFlight beta
             <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-arrow-down"/></svg>
           </a>
         </div>
@@ -174,7 +175,7 @@
           <li>
             <span class="badge"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-link"/></svg></span>
             <h3>Cards that open apps</h3>
-            <p>Link a card to its app or a Shortcut — the bank card opens your banking app, the gym card its booking app, right from the card in your hand.</p>
+            <p>Give a card one or more links: pick from 18 banking and health apps, paste your own app link or name a Shortcut. iFoldy explains the Shortcut setup step by step and copies a ready prompt for the Shortcuts app.</p>
           </li>
           <li>
             <span class="badge"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-hand"/></svg></span>
@@ -197,10 +198,10 @@
         <p class="eyebrow">The spine sleeves</p>
         <h2>Everything else you carry.</h2>
         <p>
-          Along the fold, labelled slip pockets hold folded paper, a few photos and your receipts.
-          Pull one out and it unfolds along its creases — into a note you can write on, a map that
-          finds your way, or the week ahead. On the Duo, the map spreads across one leaf and the
-          route planner sits on the other.
+          Along the fold, labelled slip pockets hold folded paper, a few photos, your receipts and
+          your stamp cards. Pull one out and it unfolds along its creases — into a note you can write
+          on, a map that finds your way, or the week ahead. On the Duo, the map spreads across one
+          leaf and the route planner sits on the other.
         </p>
       </div>
       <div class="duo reveal" style="max-width:980px;margin-inline:auto">
@@ -220,11 +221,16 @@
           <figcaption><b>Paper map</b>Four panels unfold into Apple Maps with search, walking and driving routes, and a hand-off to navigation.</figcaption>
         </figure>
         <figure class="reveal">
-          <div class="duo"><div class="screen"><img src="assets/img/duo-business-cards.jpg" alt="A stack of business cards on the left leaf with search and buttons to call, message or mail." width="1800" height="1266" loading="lazy"></div></div>
-          <figcaption><b>Business cards</b>Your contacts as a little stack on six paper designs. Search, flip, then call, message or mail.</figcaption>
+          <div class="duo"><div class="screen"><img src="assets/img/duo-food.jpg" alt="The Food &amp; Loyalty pocket open on the right leaf: an empty stamp card with ten circles and buttons to add a stamp card or an app shortcut." width="1800" height="1266" loading="lazy"></div></div>
+          <figcaption><b>Food &amp; Loyalty</b>Stamp cards for your café or bakery, from 5 to 30 stamps in seven designs, plus shortcuts to your food apps.</figcaption>
         </figure>
       </div>
       <div class="cards pockets-list">
+        <article class="card reveal">
+          <span class="badge"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-person"/></svg></span>
+          <h3>Business cards</h3>
+          <p>Your contacts as a little stack on six paper designs. Search, flip, then call, message or mail. The cards age with your wallet.</p>
+        </article>
         <article class="card reveal">
           <span class="badge"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-receipt"/></svg></span>
           <h3>Receipts</h3>
@@ -242,8 +248,8 @@
         </article>
         <article class="card reveal">
           <span class="badge"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-check-list"/></svg></span>
-          <h3>Pick what you carry</h3>
-          <p>Notes &amp; Reminders, Business cards, Photos, Receipts, Map and Calendar can each be switched on or off. Hidden pockets keep their contents.</p>
+          <h3>Pick what you carry <span class="pro-tag">Pro</span></h3>
+          <p>Switch Notes &amp; Reminders, Business cards, Photos, Receipts, Map, Calendar and Food &amp; Loyalty on or off. Hidden pockets keep their contents.</p>
         </article>
       </div>
     </div>
@@ -259,17 +265,18 @@
           Fine-grain leather, brushed suede, plain-weave canvas or woven carbon — each with
           its own seams, edges and give. Let it age from new to worn to light or heavy vintage,
           with patina, scuffs and frayed stitching. Then burn your own name and logo into the cover.
+          Three leathers come free; the other five finishes are part of iFoldy Pro.
         </p>
       </div>
       <div class="materials reveal">
         <div class="material m-cognac"><span>Leather</span><b>Cognac</b></div>
         <div class="material m-espresso"><span>Leather</span><b>Espresso</b></div>
         <div class="material m-bordeaux"><span>Leather</span><b>Bordeaux</b></div>
-        <div class="material m-forest"><span>Leather</span><b>Forest</b></div>
-        <div class="material m-sand"><span>Suede</span><b>Sand</b></div>
-        <div class="material m-olive"><span>Canvas</span><b>Olive</b></div>
-        <div class="material m-navy"><span>Canvas</span><b>Navy</b></div>
-        <div class="material m-carbon"><span>Carbon</span><b>Graphite</b></div>
+        <div class="material m-forest pro"><span>Leather</span><b>Forest</b></div>
+        <div class="material m-sand pro"><span>Suede</span><b>Sand</b></div>
+        <div class="material m-olive pro"><span>Canvas</span><b>Olive</b></div>
+        <div class="material m-navy pro"><span>Canvas</span><b>Navy</b></div>
+        <div class="material m-carbon pro"><span>Carbon</span><b>Graphite</b></div>
       </div>
       <div class="duo-covers reveal">
         <div class="duo"><div class="screen"><img src="assets/img/duo-carbon.jpg" alt="The open wallet on iPhone Duo in graphite carbon, with a fine woven texture on both leaves." width="1800" height="1266" loading="lazy"></div></div>
@@ -278,18 +285,23 @@
       <ul class="feature-list personal-list reveal">
         <li>
           <span class="badge"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-pen"/></svg></span>
-          <h3>Name and logo</h3>
+          <h3>Name and logo <span class="pro-tag">Pro</span></h3>
           <p>Up to 40 characters, plus the original mark, a symbol or your own picture from Photos — with a live preview on the material.</p>
         </li>
         <li>
           <span class="badge"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-sparkle"/></svg></span>
           <h3>Four conditions</h3>
-          <p>New, Worn, Light Vintage and Heavy Vintage age the cover, pockets, sleeves and even the photo prints.</p>
+          <p>New, Worn, Light Vintage and Heavy Vintage age every finish, the pockets, sleeves, business cards and even the photo prints.</p>
         </li>
         <li>
           <span class="badge"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-band"/></svg></span>
-          <h3>Retaining band</h3>
+          <h3>Retaining band <span class="pro-tag">Pro</span></h3>
           <p>An optional elastic, nylon or leather band in six colours peels over the edge before the wallet opens.</p>
+        </li>
+        <li>
+          <span class="badge"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-card"/></svg></span>
+          <h3>ID window <span class="pro-tag">Pro</span></h3>
+          <p>A see-through pocket on the left or right: clear foil, foil with mesh or mesh only. It scratches and frays with the wallet’s condition.</p>
         </li>
       </ul>
     </div>
@@ -395,8 +407,52 @@
     </div>
   </section>
 
+  <!-- ============================ Pro ============================ -->
+  <section class="block tinted" id="pro">
+    <div class="wrap split">
+      <div class="reveal">
+        <div class="section-head">
+          <p class="eyebrow">Free &amp; Pro</p>
+          <h2>Start free. Unlock it all once.</h2>
+          <p>
+            Everything that makes iFoldy a wallet is free. iFoldy Pro is a single in-app
+            purchase — no subscription, no recurring fees — for more cards and every finish.
+            The price is shown in the App Store.
+          </p>
+        </div>
+        <div class="plans">
+          <div class="plan">
+            <h3>Free</h3>
+            <ul>
+              <li>Every fold, pocket and paper motion</li>
+              <li>Up to three cards of your own, plus the example wallets</li>
+              <li>Cognac, Espresso and Bordeaux leather in all four conditions</li>
+              <li>Note, map, calendar, business cards, photos, receipts and stamp cards</li>
+              <li>App links and Shortcuts on your cards; read your Reminders</li>
+            </ul>
+          </div>
+          <div class="plan plan-pro">
+            <h3>iFoldy Pro</h3>
+            <ul>
+              <li>Unlimited cards of your own</li>
+              <li>Forest leather, Sand suede, Olive and Navy canvas, Graphite carbon</li>
+              <li>Your name and logo on the cover, retaining band, ID window</li>
+              <li>All six business-card designs and stack-band colours</li>
+              <li>Choose your side pockets; add and tick off Reminders on paper</li>
+              <li>Apple Wallet hints on any card</li>
+            </ul>
+          </div>
+        </div>
+        <p class="plans-note tiny">There is no paywall at first launch. Should you ever lose Pro, nothing is deleted — your cards and saved designs stay. Restore your purchase any time in Settings.</p>
+      </div>
+      <div class="duo reveal">
+        <div class="screen"><img src="assets/img/duo-paywall.jpg" alt="The iFoldy Pro sheet on iPhone Duo: a carbon card preview above the heading “Make iFoldy Truly Yours.” and tiles for Unlimited Cards and Premium Materials." width="1800" height="1266" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
   <!-- ============================ Privacy ============================ -->
-  <section class="block" id="privacy" style="padding-top:0">
+  <section class="block" id="privacy">
     <div class="wrap">
       <div class="leather-panel reveal">
         <div style="position:relative;max-width:42rem;display:grid;gap:1rem">
@@ -423,7 +479,7 @@
           <div>
             <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-eye-off"/></svg>
             <h3>No tracking at all</h3>
-            <p>No third-party SDKs. Details in the <a href="privacy.html">privacy policy</a>.</p>
+            <p>No third-party SDKs. iFoldy Pro is bought through the App Store, with no purchase server of our own. Details in the <a href="privacy.html">privacy policy</a>.</p>
           </div>
         </div>
       </div>
@@ -436,6 +492,25 @@
       <img class="hero-icon" src="assets/icon-512.png" alt="" width="112" height="112">
       <h2>Fold it open soon.</h2>
       <p class="lede">iFoldy is in the final stretch. It will be available on the App Store — made for iPhone Duo, at home on every iPhone and iPad.</p>
+      <form class="beta" id="beta" action="https://formsubmit.co/info@hildel.com" method="POST" data-beta
+            data-sending="Sending…" data-done="Thanks! We’ll send your TestFlight invitation to this address."
+            data-failed="That didn’t work. Please try again in a moment, or write to info@hildel.com.">
+        <h3>Join the TestFlight beta</h3>
+        <p>Enter your email address and press Send. We’ll invite you to test iFoldy before it reaches the App Store.</p>
+        <div class="beta-row">
+          <label class="sr-only" for="beta-email">Your email address</label>
+          <input id="beta-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@example.com">
+          <button class="btn btn-primary" type="submit">Send</button>
+        </div>
+        <input type="hidden" name="_subject" value="Testflightbewerbung iFoldy">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://v4ulthunt3r.github.io/iFoldy/index.html?beta=sent#beta">
+        <input type="hidden" name="language" value="English">
+        <input class="sr-only" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <p class="beta-status" role="status" aria-live="polite"></p>
+        <p class="tiny muted">We use your address only for the TestFlight invitation. Details in the <a href="privacy.html#beta">privacy policy</a>.</p>
+      </form>
       <span class="store-badge" aria-label="Coming soon to the App Store">
         <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-apple"/></svg>
         <span><small>Coming soon to the</small><b>App Store</b></span>
@@ -466,6 +541,6 @@
   </div>
 </footer>
 
-<script src="assets/site.js?v=1" defer></script>
+<script src="assets/site.js?v=2" defer></script>
 </body>
 </html>

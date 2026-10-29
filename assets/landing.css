@@ -359,3 +359,57 @@ section.block.tinted { background: var(--bg-2); }
 .pockets-list { margin-top: clamp(2rem, 5vw, 3.5rem); }
 .personal-list { grid-template-columns: repeat(3, 1fr); gap: 1.6rem 2rem; margin-top: clamp(2.5rem, 5vw, 3.5rem); }
 @media (max-width: 880px) { .personal-list { grid-template-columns: 1fr; } }
+
+/* Pro: a champagne ribbon on locked finishes and a small tag on Pro features, as in the app. */
+.material.pro::after {
+  content: "PRO"; position: absolute; top: 14px; right: -34px; width: 120px; transform: rotate(45deg);
+  background: linear-gradient(90deg, #E9D5A8, #CFAF72); color: #3A2A14; text-align: center;
+  font: 700 .62rem/1 var(--sans); letter-spacing: .16em; padding: .32rem 0; box-shadow: 0 2px 6px rgba(0, 0, 0, .25);
+}
+.pro-tag {
+  display: inline-block; vertical-align: .15em; margin-left: .35rem; padding: .18rem .45rem; border-radius: 6px;
+  background: linear-gradient(90deg, #E9D5A8, #CFAF72); color: #3A2A14;
+  font: 700 .62rem/1 var(--sans); letter-spacing: .12em; text-transform: uppercase;
+}
+.personal-list { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 880px) { .personal-list { grid-template-columns: 1fr; } }
+
+.plans { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.plan { position: relative; background: var(--surface); border-radius: var(--radius); padding: 1.5rem 1.5rem 1.6rem; box-shadow: var(--shadow); }
+.plan::after { content: ""; position: absolute; inset: 7px; border: 1.2px dashed var(--stitch); border-radius: calc(var(--radius) - 6px); pointer-events: none; opacity: .7; }
+.plan h3 { margin-bottom: .8rem; }
+.plan ul { margin: 0; padding: 0; list-style: none; display: grid; gap: .55rem; }
+.plan li { position: relative; padding-left: 1.4rem; color: var(--ink-2); font-size: .95rem; line-height: 1.45; }
+.plan li::before { content: ""; position: absolute; left: .1rem; top: .45em; width: .55rem; height: .3rem; border: solid var(--accent); border-width: 0 0 2px 2px; transform: rotate(-45deg); }
+.plan-pro { background: linear-gradient(160deg, #3A271B, #24170F); color: #F3E9DC; }
+.plan-pro::after { border-color: rgba(233, 213, 168, .4); }
+.plan-pro h3 { color: #E9D5A8; }
+.plan-pro li { color: rgba(243, 233, 220, .86); }
+.plan-pro li::before { border-color: #E9D5A8; }
+.plans-note { color: var(--ink-3); margin-top: 1rem; }
+@media (max-width: 600px) { .plans { grid-template-columns: 1fr; } }
+
+/* TestFlight sign-up */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.nav-beta { color: var(--accent-ink); font-weight: 600; }
+.beta {
+  position: relative; width: min(560px, 100%); display: grid; gap: .8rem; text-align: left;
+  background: var(--surface); border-radius: var(--radius); padding: 1.6rem 1.7rem; box-shadow: var(--shadow);
+}
+.beta::after { content: ""; position: absolute; inset: 7px; border: 1.2px dashed var(--stitch); border-radius: calc(var(--radius) - 6px); pointer-events: none; opacity: .7; }
+.beta > * { position: relative; z-index: 1; }
+.beta p { color: var(--ink-2); font-size: .97rem; }
+.beta-row { display: flex; gap: .6rem; }
+.beta input[type="email"] {
+  flex: 1; min-width: 0; padding: .8rem 1.1rem; border-radius: 999px; border: 1px solid var(--line);
+  background: var(--bg); color: var(--ink); font: 1rem/1.2 var(--sans);
+}
+.beta input[type="email"]:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.beta button[disabled] { opacity: .6; cursor: progress; }
+.beta-status:empty { display: none; }
+.beta-status { font-weight: 600; }
+.beta[data-state="done"] .beta-status { color: #3E7B4F; }
+.dark .beta[data-state="done"] .beta-status { color: #8FD0A0; }
+.beta[data-state="failed"] .beta-status { color: #B3412C; }
+.dark .beta[data-state="failed"] .beta-status { color: #F09A84; }
+@media (max-width: 480px) { .beta-row { flex-direction: column; } .beta-row .btn { justify-content: center; } }
