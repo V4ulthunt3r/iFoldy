@@ -30,7 +30,7 @@
       } catch (e) {}
     })();
   </script>
-  <link rel="stylesheet" href="assets/landing.css?v=6">
+  <link rel="stylesheet" href="assets/landing.css?v=7">
 </head>
 <body>
 <a class="skip" href="#main">Zum Inhalt springen</a>
@@ -185,8 +185,8 @@
         </ul>
       </div>
       <div class="duo-pair reveal">
-        <div class="duo"><div class="screen"><img src="assets/img/duo-interior.jpg" alt="Die geöffnete Brieftasche auf dem iPhone Duo: drei Karten in ihren Fächern, der iFoldy-Schriftzug in beide Seiten gebrannt und beschriftete Papiertaschen am Falz." width="1800" height="1266" loading="lazy"></div></div>
-        <div class="duo"><div class="screen"><img src="assets/img/duo-card-out.jpg" alt="Die Karte „The Reading Room“, aus dem Fach gezogen und vor die offene Brieftasche gehalten." width="1800" height="1266" loading="lazy"></div></div>
+        <div class="duo"><div class="screen"><img src="assets/img/duo-interior.jpg" alt="Die geöffnete Brieftasche auf dem iPhone Duo mit Musterkarten: eine Nordbank-Debitkarte, eine Gesundheitskarte im klaren Ausweisfenster und ein Führerschein, der iFoldy-Schriftzug in beide Seiten gebrannt und beschriftete Papiertaschen am Falz." width="1800" height="1266" loading="lazy"></div></div>
+        <div class="duo"><div class="screen"><img src="assets/img/duo-card-out.jpg" alt="Die Nordbank-Musterkarte, aus dem Fach gezogen und vor die offene Brieftasche gehalten." width="1800" height="1266" loading="lazy"></div></div>
       </div>
     </div>
   </section>
@@ -206,9 +206,9 @@
       </div>
       <div class="duo reveal" style="max-width:980px;margin-inline:auto">
         <div class="screen">
-          <video src="assets/img/notes-and-map.mp4" poster="assets/img/notes-and-map-poster.jpg"
+          <video src="assets/img/duo-note.mp4" poster="assets/img/duo-note-poster.jpg"
                  autoplay muted loop playsinline preload="metadata" width="1280" height="900"
-                 aria-label="Aufnahme auf dem iPhone Duo: Ein gefalteter Zettel wird aus der Tasche gezogen und entfaltet, danach öffnet sich eine Papierkarte."></video>
+                 aria-label="Aufnahme auf dem iPhone Duo: Ein gefalteter Zettel wird aus der Tasche am Falz gezogen, entfaltet sich über die Brieftasche und wird wieder eingesteckt."></video>
         </div>
       </div>
       <div class="gallery">
@@ -280,7 +280,7 @@
         <div class="material m-carbon pro"><span>Carbon</span><b>Graphit</b></div>
       </div>
       <div class="duo-covers reveal">
-        <div class="duo"><div class="screen"><img src="assets/img/duo-carbon.jpg" alt="Die offene Brieftasche auf dem iPhone Duo in Carbon Graphit, mit feiner Webstruktur auf beiden Seiten." width="1800" height="1266" loading="lazy"></div></div>
+        <div class="duo"><div class="screen"><img src="assets/img/duo-carbon.jpg" alt="Die offene Brieftasche auf dem iPhone Duo in Carbon Graphit, mit feiner Webstruktur auf beiden Seiten und den Musterkarten in ihren Fächern." width="1800" height="1266" loading="lazy"></div></div>
         <div class="duo-outer"><div class="screen"><img src="assets/img/duo-cover-personal.jpg" alt="Das zugeklappte Duo mit personalisiertem Cognac-Deckel: ein eigenes Logo und der Name „Peters iFoldy“, ins Leder gebrannt." width="1031" height="1500" loading="lazy"></div></div>
       </div>
       <ul class="feature-list personal-list reveal">
@@ -305,6 +305,30 @@
           <p>Ein Sichtfach links oder rechts: klare Folie, Folie mit Netz oder nur Netz. Es zerkratzt und franst mit dem Zustand der Brieftasche.</p>
         </li>
       </ul>
+      <div class="split wear-block">
+        <div class="reveal">
+          <div class="section-head">
+            <p class="eyebrow">Vintage</p>
+            <h2>Lass sie altern.</h2>
+            <p>Jahre in einer Sekunde. Eingetragen, Vintage Light und Vintage Stark bringen abgegriffene Kanten, dunklere Griffstellen, verblasste Nähte und weiche Knicke — auf Leder, Velours, Canvas und Carbon, auf den Fächern, den Visitenkarten und sogar dem Ausweisfenster. Zieh über die Brieftasche, um zu vergleichen.</p>
+          </div>
+          <div class="wear-chips" role="group" aria-label="Zustand">
+            <button type="button" data-wear-src="assets/img/duo-wear-worn.jpg" aria-pressed="false">Eingetragen</button>
+            <button type="button" data-wear-src="assets/img/duo-wear-light.jpg" aria-pressed="false">Vintage Light</button>
+            <button type="button" data-wear-src="assets/img/duo-wear-heavy.jpg" aria-pressed="true">Vintage Stark</button>
+          </div>
+        </div>
+        <div class="duo wear reveal" data-wear>
+          <div class="screen">
+            <img src="assets/img/duo-wear-new.jpg" alt="Die offene Brieftasche auf dem iPhone Duo in neuem Cognac-Leder." width="1800" height="1266" loading="lazy">
+            <div class="wear-aged"><img data-wear-img src="assets/img/duo-wear-heavy.jpg" alt="" width="1800" height="1266" loading="lazy"></div>
+            <span class="wear-line" aria-hidden="true"></span>
+            <span class="wear-tag wear-tag-l" aria-hidden="true">Neu</span>
+            <span class="wear-tag wear-tag-r" aria-hidden="true" data-wear-label>Vintage Stark</span>
+            <input class="wear-range" type="range" min="0" max="100" value="50" aria-label="Neue und gealterte Brieftasche vergleichen">
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -397,7 +421,7 @@
         <article class="card reveal">
           <span class="badge"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-card"/></svg></span>
           <h3>Beispiel-Brieftaschen</h3>
-          <p>Probier es mit fiktiven Demo-Karten aus — Alltag und Reise für Europa oder Alltag USA — ohne deine eigenen Karten anzufassen.</p>
+          <p>Probier es mit fiktiven Musterkarten für Europa, Reisen, die USA, Japan und Indien aus — als Illustration oder als detaillierte Muster mit Chip, Hologramm und Beispielporträt — ohne deine eigenen Karten anzufassen.</p>
         </article>
         <article class="card reveal">
           <span class="badge"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#i-access"/></svg></span>
@@ -447,7 +471,7 @@
         <p class="plans-note tiny">Beim ersten Start gibt es keine Paywall. Solltest du Pro einmal verlieren, wird nichts gelöscht — deine Karten und gespeicherten Gestaltungen bleiben. Deinen Kauf stellst du jederzeit in den Einstellungen wieder her.</p>
       </div>
       <div class="duo reveal">
-        <div class="screen"><img src="assets/img/duo-paywall.jpg" alt="Das iFoldy-Pro-Fenster auf dem iPhone Duo: eine Carbon-Karte als Vorschau über der Überschrift „Make iFoldy Truly Yours.“ und Kacheln für unbegrenzte Karten und Premium-Materialien." width="1800" height="1266" loading="lazy"></div>
+        <div class="screen"><img src="assets/img/duo-paywall.jpg" alt="Das iFoldy-Pro-Fenster auf dem iPhone Duo: eine Lederkarte als Vorschau über der Überschrift „Make iFoldy Truly Yours.“ und Kacheln für unbegrenzte Karten, Premium-Materialien und Personalisierung." width="1800" height="1266" loading="lazy"></div>
       </div>
     </div>
   </section>
@@ -542,6 +566,6 @@
   </div>
 </footer>
 
-<script src="assets/site.js?v=2" defer></script>
+<script src="assets/site.js?v=3" defer></script>
 </body>
 </html>

@@ -42,6 +42,42 @@
   const year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 
+  /* ---- Vintage teaser: drag to compare, chips pick the aged condition ---- */
+  document.querySelectorAll('[data-wear]').forEach((stage) => {
+    const range = stage.querySelector('.wear-range');
+    const aged = stage.querySelector('[data-wear-img]');
+    const label = stage.querySelector('[data-wear-label]');
+    const block = stage.closest('.wear-block');
+    const set = (v) => stage.style.setProperty('--cut', v + '%');
+    range.addEventListener('input', () => set(range.value));
+    block.querySelectorAll('[data-wear-src]').forEach((chip, _, chips) => {
+      chip.addEventListener('click', () => {
+        chips.forEach((c) => c.setAttribute('aria-pressed', String(c === chip)));
+        label.textContent = chip.textContent;
+        aged.classList.add('swapping');
+        const next = new Image();
+        next.onload = () => { aged.src = chip.dataset.wearSrc; aged.classList.remove('swapping'); };
+        next.src = chip.dataset.wearSrc;
+      });
+    });
+    /* A single sweep the first time it scrolls into view hints that it can be dragged. */
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+      const io = new IntersectionObserver(([e]) => {
+        if (!e.isIntersecting) return;
+        io.disconnect();
+        const start = performance.now();
+        const step = (t) => {
+          const k = Math.min(1, (t - start) / 1600);
+          const v = 50 + 32 * Math.sin(k * Math.PI * 2) * (1 - k);
+          set(v.toFixed(1)); range.value = v;
+          if (k < 1) requestAnimationFrame(step);
+        };
+        setTimeout(() => requestAnimationFrame(step), 500);
+      }, { threshold: 0.6 });
+      io.observe(stage);
+    }
+  });
+
   /* ---- TestFlight sign-up: posts the address to FormSubmit, which mails it on.
      Without JavaScript the form posts normally and FormSubmit redirects back. ---- */
   const beta = document.querySelector('[data-beta]');
