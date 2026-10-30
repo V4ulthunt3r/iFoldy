@@ -39,8 +39,8 @@ material.
 
 - Replace the “Coming soon to the App Store” badges (`.store-badge`, two per landing
   page) with the real App Store link once the app is live.
-- The canonical URLs assume <https://v4ulthunt3r.github.io/iFoldy/>; update them in each
-  `<head>`, `robots.txt` and `sitemap.xml` if the site moves to a custom domain.
+- The site is served at <https://ifoldy.app/> (`CNAME` file, GitHub Pages custom domain).
+  The canonical URLs in each `<head>`, `robots.txt` and `sitemap.xml` use that domain.
 
 ## Local preview
 
