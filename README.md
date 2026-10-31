@@ -2,7 +2,7 @@
 
 Static landing page for **iFoldy**, the iOS app that turns iPhone Duo into a stitched
 wallet: unfold the phone and the wallet opens with it — card pockets, a folded note, a
-paper map and a pocket calendar. Regular iPhones and iPads are covered in their own section.
+paper map and a pocket calendar. Regular iPhones are covered in their own section.
 
 English is the default; German lives alongside it.
 
